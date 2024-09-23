@@ -1,5 +1,6 @@
+"use client";
+
 export const ToggleButton = ({ options = [], onSelect, selectedOption }) => {
-  "use client";
   return (
      <>
       {options.map((option, index) => (

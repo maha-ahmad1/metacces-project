@@ -1,5 +1,5 @@
 import ToggleButton from "../ToggleButton";
-import Button from "../button";
+import Button from "../Button";
 import Titel from "../Titel";
 import { motion } from "framer-motion";
 import Image from "next/image";
