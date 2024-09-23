@@ -13,14 +13,13 @@ export default function SignupForm() {
         <Titel />
         <motion.div
           className="mt-6"
-          initial={{ x: "-100vw", opacity: 0 }} // يبدأ من خارج الشاشة على اليسار
-          animate={{ x: 0, opacity: 1 }} // يتحرك إلى مكانه الطبيعي
+          initial={{ x: "-100vw", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{
-            type: "spring", // نوع الأنيميشن الذي يعطي تأثير ارتداد (bounce)
-            stiffness: 100, // يتحكم في حدة الارتداد
-            damping: 10, // يتحكم في مدى تقليل الارتداد
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
             duration: 0.8,
-            // delay: 0.1, // تأخير ليتزامن مع العناصر السابقة
           }}
         >
           <div className="relative">

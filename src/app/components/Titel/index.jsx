@@ -11,7 +11,6 @@ const Titel = () => {
           stiffness: 100,
           damping: 10,
           duration: 0.8,
-          // delay: 0.1,
         }}
       >
         <h2 className=" font-keep-calm text-center text-3xl font-medium mt-10 tracking-tight">
