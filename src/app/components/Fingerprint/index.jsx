@@ -4,6 +4,7 @@ const Fingerprint = () => {
   return (
     <div className="mb-20">
       <Image
+        priority={true}
         width={30}
         height={40}
         src="/assets/Layer_1.png"
