@@ -3,7 +3,10 @@ import Button from "../button";
 import Titel from "../Titel";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+
 export default function SignupForm() {
+  const [selectedOption, setSelectedOption] = useState("Male");
   return (
     <div className="font-keep-calm h-screen bg-[#080717]">
       <div className=" p-6 rounded-lg shadow-lg text-white bg-[#080717]">
@@ -38,7 +41,11 @@ export default function SignupForm() {
             </i>
           </div>
           <div className="mt-6 flex justify-between items-center">
-            <ToggleButton />
+            <ToggleButton
+              onSelect={(option) => setSelectedOption(option)}
+              options={["Male", "Female"]}
+              selectedOption={selectedOption}
+            />{" "}
           </div>
         </motion.div>
 
