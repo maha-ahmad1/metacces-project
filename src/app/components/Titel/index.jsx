@@ -13,13 +13,13 @@ const Titel = () => {
           duration: 0.8,
         }}
       >
-        <h2 className=" font-keep-calm text-center text-3xl font-medium mt-10 tracking-tight">
+        <h2 className="font-keepcalm text-center text-3xl mt-4 tracking-tight">
           WELCOME TO WORLD
         </h2>
-        <h1 className=" font-keep-calm text-center text-4xl  font-medium  mt-2  tracking-10px">
+        <h1 className="font-keepcalm text-center text-4xl mt-2 tracking-10px">
           METACCES
         </h1>
-        <p className="text-center opacity-70 text-md mt-4 text-[#D7D8D9]">
+        <p className="text-center opacity-70 text-[16px] mt-4 text-[#D7D8D9] font-worksans ">
           From Mythical Origins to Digital Frontiers
         </p>
       </motion.div>

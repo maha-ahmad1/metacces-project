@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Fingerprint = () => {
   return (
-    <div className="mb-20">
+    <div className="mt-auto">
       <Image
         priority={true}
         width={30}

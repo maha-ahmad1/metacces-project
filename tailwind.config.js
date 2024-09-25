@@ -12,7 +12,8 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        keepCalm: ['"KeepCalm"', "sans-serif"],
+        keepcalm: 'var(--font-keep-calm)',
+        worksans: 'var(--font-work-sans)'
       },
       letterSpacing: {
         "10px": "10px",
