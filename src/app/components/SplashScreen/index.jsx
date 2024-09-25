@@ -30,7 +30,7 @@ const SplashScreen = () => {
           height={100}
           width={100}
           className="absolute w-full h-full object-cover opacity-80"
-          src="/assets/metacces layer1.gif"
+          src="/assets/metacceslayer1.gif"
           alt="First Layer GIF"
         />
 
@@ -39,7 +39,7 @@ const SplashScreen = () => {
             height={100}
             width={100}
             className="absolute w-full h-full object-cover opacity-100 mix-blend-screen"
-            src="/assets/metacces layer 2.gif"
+            src="/assets/metacceslayer2.gif"
             alt="Second Layer GIF"
           />
         )}
