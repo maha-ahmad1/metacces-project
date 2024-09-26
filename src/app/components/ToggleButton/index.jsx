@@ -1,13 +1,19 @@
 "use client";
+
 export const ToggleButton = ({ options = [], onSelect, selectedOption }) => {
   return (
     <>
       {options.map((option, index) => (
-        <div key={index} className="relative w-1/2 h-full p-1 z-10 rounded-shape">
+        <div
+          key={index}
+          className="relative w-1/2 h-full p-1 z-10 rounded-shape"
+        >
           <button
             onClick={() => onSelect(option)}
-            className={`font-worksans rounded-shape border-2 border-[#6C6B70] w-full relative px-4 py-4 text-center z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${
-              option === selectedOption ? 'text-white' : 'text-[#6C6B70]'
+            className={`font-worksans rounded-shape border-2 border-[#6C6B70] w-full relative p-4 text-center z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${
+              option === selectedOption
+                ? "text-white hidden-bg "
+                : "text-[#6C6B70] "
             }`}
           >
             <span className="relative z-10">{option}</span>
@@ -19,10 +25,11 @@ export const ToggleButton = ({ options = [], onSelect, selectedOption }) => {
                     : "from-[#5F9FE7] to-[#E07DFE]"
                   : ""
               }`}
+          
             ></div>
             <div
               className={`absolute inset-[2px] rounded-shape transition-colors duration-300 ease-in-out ${
-                option === selectedOption ? "bg-[#312E52]" : ""
+                option === selectedOption ? "bg-[#312E52] " : ""
               }`}
             ></div>
           </button>
@@ -40,10 +47,15 @@ export const ToggleButton = ({ options = [], onSelect, selectedOption }) => {
                 0 26%
               );
             }
+            .hidden-bg {
+              background: transparent;
+              border: none;
+            }
           `}</style>
         </div>
       ))}
     </>
   );
 };
+
 export default ToggleButton;

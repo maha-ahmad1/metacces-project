@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import SignupForm from "../Form";
 
@@ -20,19 +20,19 @@ const SplashScreen = () => {
     return (
       <div className="relative flex justify-center items-center w-screen h-screen overflow-hidden bg-[#080717]">
         <div className="absolute top-0 left-0 w-full h-full">
-          <video
+          <Image
+            height={100}
+            width={100}
             className="w-full h-full object-cover opacity-80"
-            autoPlay
-            loop
-            muted
-            src="/assets/MetaccesLayer1.webm"
+            alt="Metacces Layer1"
+            src="/assets/Metacces Layer1.gif"
           />
-          <video
+          <Image
+            height={100}
+            width={100}
+            alt="Metacces Layer2"
             className="absolute top-0 left-0 w-full h-full object-cover opacity-100 mix-blend-screen"
-            autoPlay
-            loop
-            muted
-            src="/assets/MetaccesLayer2.webm"
+            src="/assets/metacces layer 2.gif"
           />
         </div>
       </div>
