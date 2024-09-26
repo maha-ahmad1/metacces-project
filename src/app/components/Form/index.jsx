@@ -9,8 +9,8 @@ export default function SignupForm() {
   const [selectedOption, setSelectedOption] = useState("Male");
 
   return (
-    <div className=" w-full h-screen flex flex-col justify-between p-8">
-      <div className=" rounded-lg shadow-lg text-white flex-grow">
+    <div className=" w-full h-screen flex flex-col justify-between p-5">
+      <div className=" text-white flex-grow">
         <Titel />
         <div className="mt-6">
           <motion.div
@@ -68,7 +68,7 @@ export default function SignupForm() {
         </div>
       </div>
 
-      <div className="mt-auto">
+      <div className="fixed bottom-0 left-0 w-full p-5 bg-[#080717] z-20">
         <Button />
       </div>
     </div>

@@ -13,7 +13,7 @@ const Titel = () => {
           duration: 0.8,
         }}
       >
-        <h2 className="font-keepcalm text-center text-3xl mt-4 tracking-tight">
+        <h2 className="font-keepcalm text-center text-3xl mt-8 tracking-tight">
           WELCOME TO WORLD
         </h2>
         <h1 className="font-keepcalm text-center text-4xl mt-2 tracking-10px">
