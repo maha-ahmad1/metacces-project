@@ -23,56 +23,6 @@ export default function SignupForm() {
               duration: 0.8,
             }}
           >
-            {/* <div className="relative mb-4">
-              <input
-                id="username"
-                type="text"
-                className="w-full rounded-shape px-12 py-4 !bg-[#080717] border-2 border-[#6C6B70] text-[#6C6B70] text-md focus:outline-none focus:ring focus:border-blue-500"
-                placeholder="Username"
-                autoComplete="off"
-              />
-
-              <input
-                type="text"
-                id="name"
-                autoComplete="off"
-                placeholder="Username"
-                className={`w-full  px-12 py-4 !bg-[#080717] border-2 border-[#6C6B70] text-[#6C6B70] text-md   ${
-                  focused
-                  ? 'outline-none border-transparent bg-clip-padding bg-origin-border bg-gradient-to-r from-purple-300 via-blue-200 to-green-200'
-                  : ""
-                }`}
-                onFocus={() => setFocused(true)}
-                onBlur={() => setFocused(false)}
-              />
-
-              
-              <i className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
-                <Image
-                  width={25}
-                  height={30}
-                  src="/assets/email.png"
-                  alt="email"
-                  className="text-white"
-                />
-              </i>
-              <style jsx>{`
-                .rounded-shape {
-                  border-radius: 25px;
-                  clip-path: polygon(
-                    4% 0,
-                    96% 0,
-                    100% 26%,
-                    100% 74%,
-                    96% 100%,
-                    4% 100%,
-                    0 74%,
-                    0 26%
-                  );
-                }
-              `}</style>
-            </div> */}
-
             <div className="relative mb-4">
               <input
                 type="text"
@@ -85,7 +35,7 @@ export default function SignupForm() {
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
               />
-             <i className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white z-10">
+              <i className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white z-10">
                 <Image
                   width={25}
                   height={30}

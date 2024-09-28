@@ -1,11 +1,15 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import Fingerprint from "../components/Fingerprint";
+import GradientButton from "../components/GradientButton";
+import Border from "../components/Border";
+import { useRouter } from "next/navigation";
 
 export default function Component() {
   const [progress, setProgress] = useState(0);
   const [isPressed, setIsPressed] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
+  const router = useRouter();
 
   const startCounting = useCallback(() => {
     if (!isCompleted) {
@@ -26,14 +30,15 @@ export default function Component() {
     let intervalId;
 
     if (isPressed && progress < 100) {
-      intervalId = setInterval(() => { //This function will run every 50 milliseconds.
+      intervalId = setInterval(() => {
         setProgress((prevProgress) => {
           if (prevProgress >= 100) {
             clearInterval(intervalId);
             setIsCompleted(true);
+            router.push('/profile'); 
             return 100;
           }
-          return prevProgress + 1; //If prevProgress is less than 100, it increments the progress by 1
+          return prevProgress + 1; 
         });
       }, 50);
     }
@@ -41,7 +46,7 @@ export default function Component() {
     return () => {
       if (intervalId) clearInterval(intervalId);
     };
-  }, [isPressed, progress]);
+  }, [isPressed, progress, router]); // Add router to dependency array
 
   return (
     <div className="h-screen bg-[#080717] flex flex-col items-center justify-between p-8">
@@ -50,14 +55,56 @@ export default function Component() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae.
         </h1>
-        <div className="bg-[#080717] rounded-shape h-6 overflow-hidden border-2 border-[#6C6B70] relative">
-          <div
-            className="h-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 transition-all duration-100 ease-linear"
-            style={{ width: `${progress}%` }}
+
+       
+        <div>
+          <Border
+            image={
+              <div className="">
+                <div
+                  className="absolute inset-0 rounded-shape "
+                  style={{
+                    width: `${progress}%`,
+                    background:
+                      " linear-gradient(to right, #5F9FE7, #4AE1D2, #E07DFE, #FF1FCA)",
+                  }}
+                ></div>
+                <div className=" flex items-center justify-center absolute -inset-[2px] rounded-shape border-gradient">
+                  <p className="text-white rounded-shape">{progress}%</p>
+                </div>
+              </div>
+            }
+            padding="p-4"
+            backgroundColor="#080717"
+            className=""
           />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <p className="text-white">{progress}%</p>
-          </div>
+
+          <style jsx>{`
+            .rounded-shape {
+              border-radius: 24px;
+              clip-path: polygon(
+                4% 0,
+                96% 0,
+                100% 26%,
+                100% 74%,
+                96% 100%,
+                4% 100%,
+                0 74%,
+                0 26%
+              );
+              .border-gradient {
+                background: linear-gradient(
+                  to right,
+                  #5f9fe7,
+                  #4ae1d2,
+                  #e07dfe,
+                  #ff1fca
+                );
+                z-index: 1;
+                position: absolute;
+              }
+            }
+          `}</style>
         </div>
       </div>
       <div className="relative w-32 h-32">
@@ -76,7 +123,7 @@ export default function Component() {
       >
         <Fingerprint className="w-12 h-12 text-white" />
       </button>
-      <style jsx>{`
+      {/* <style jsx>{`
         .rounded-shape {
           clip-path: polygon(
             4% 0,
@@ -89,7 +136,7 @@ export default function Component() {
             0 26%
           );
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
