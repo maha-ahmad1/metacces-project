@@ -30,3 +30,15 @@ body {
     @apply h-full overflow-hidden;
   }
 }
+
+@keyframes hue {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@layer utilities {
+  .animate-hue {
+    animation: hue 2s linear infinite;
+  }
+}

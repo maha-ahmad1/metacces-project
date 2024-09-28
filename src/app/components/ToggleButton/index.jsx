@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 export default function ToggleButton({
@@ -8,12 +6,12 @@ export default function ToggleButton({
   selectedOption,
 }) {
   return (
-    <>
+    <div className="flex justify-between w-full h-full">
       {options.map((option, index) => (
-        <div key={index} className="relative w-1/2 h-full p-1 z-10">
+        <div key={index} className="relative w-[48%] h-full z-10">
           <button
             onClick={() => onSelect(option)}
-            className={`font-worksans rounded-shape  w-full relative p-4 text-center z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${
+            className={`font-worksans rounded-shape w-full relative p-4 text-center z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${
               option === selectedOption ? "text-white" : "text-[#6C6B70]"
             }`}
           >
@@ -48,6 +46,6 @@ export default function ToggleButton({
           );
         }
       `}</style>
-    </>
+    </div>
   );
 }

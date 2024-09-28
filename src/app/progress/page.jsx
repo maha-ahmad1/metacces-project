@@ -50,7 +50,7 @@ export default function Component() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae.
         </h1>
-        <div className="bg-[#080717] rounded-full h-6 overflow-hidden border border-[#6C6B70] relative">
+        <div className="bg-[#080717] rounded-shape h-6 overflow-hidden border-2 border-[#6C6B70] relative">
           <div
             className="h-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 transition-all duration-100 ease-linear"
             style={{ width: `${progress}%` }}
@@ -78,7 +78,6 @@ export default function Component() {
       </button>
       <style jsx>{`
         .rounded-shape {
-          border-radius: 24px;
           clip-path: polygon(
             4% 0,
             96% 0,
