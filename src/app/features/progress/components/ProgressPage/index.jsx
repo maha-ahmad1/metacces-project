@@ -2,7 +2,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Border from "app/components/Border";
+// import FingerPrint from "app/components/FingerPrint";
 import FingerPrint from "app/components/FingerPrint";
+
 
 export default function Progress() {
   const [progress, setProgress] = useState(0);
