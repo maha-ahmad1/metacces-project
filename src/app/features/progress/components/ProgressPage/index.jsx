@@ -46,7 +46,7 @@ export default function Progress() {
     return () => {
       if (intervalId) clearInterval(intervalId);
     };
-  }, [isPressed, progress, router]); // Add router to dependency array
+  }, [isPressed, progress, router]); 
 
   return (
     <div className="h-screen bg-[#080717] flex flex-col items-center justify-between p-8">
