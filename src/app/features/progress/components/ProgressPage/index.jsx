@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import Fingerprint from "@/app/components/FingerPrint";
-import Border from "@/app/components/Border";
+import Border from "app/components/Border";
+import FingerPrint from "app/components/FingerPrint";
+
 
 
 export default function Progress() {
@@ -121,7 +122,7 @@ export default function Progress() {
         onTouchEnd={stopCounting}
         disabled={isCompleted}
       >
-        <Fingerprint className="w-12 h-12 text-white" />
+        <FingerPrint className="w-12 h-12 text-white" />
       </button>
       {/* <style jsx>{`
         .rounded-shape {

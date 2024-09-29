@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-const Fingerprint = () => {
+const FingerPrint = () => {
   const handleContextMenu = (e) => {
     e.preventDefault();   
   };
@@ -19,4 +19,4 @@ const Fingerprint = () => {
   );
 };
 
-export default Fingerprint;
+export default FingerPrint;
