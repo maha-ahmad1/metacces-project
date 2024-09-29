@@ -5,7 +5,6 @@ import Border from "app/components/Border";
 import FingerPrint from "app/components/FingerPrint";
 
 
-
 export default function Progress() {
   const [progress, setProgress] = useState(0);
   const [isPressed, setIsPressed] = useState(false);
