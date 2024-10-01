@@ -32,7 +32,7 @@ body {
 }
 
 .rounded-custom {
-  border-radius: 25px;
+  border-radius: 24px;
   clip-path: polygon(
     4% 0,
     96% 0,
@@ -44,6 +44,14 @@ body {
     0 26%
   );
 }
+
+
+.rounded-progress {
+  clip-path: polygon(3% 0, 97% 0, 100% 20%, 100% 80%, 97% 100%, 3% 100%, 0% 80%, 0% 20%);
+
+}
+
+
 
 .border-gradient {
   background: linear-gradient(
