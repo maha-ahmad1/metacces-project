@@ -48,7 +48,7 @@ export const useProgress = () => {
   useEffect(() => {
     if (isCompleted) {
       const redirectTimeout = setTimeout(() => {
-        router.push('/profile');
+        router.push('/Profile');
       }, 100);
 
       return () => clearTimeout(redirectTimeout);

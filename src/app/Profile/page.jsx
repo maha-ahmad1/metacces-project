@@ -77,7 +77,7 @@ export default function ProfilePage() {
             className=""
           />
         </button>
-        <Link href="/tasks">
+        <Link href="/Tasks">
           <button className="flex items-center justify-center  ">
             <Border
               padding="p-4"
