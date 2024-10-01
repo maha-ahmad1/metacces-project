@@ -61,8 +61,8 @@ export default function ProfilePage() {
           className=""
         />
       </div> */}
-
-      <div className="flex justify-center  space-x-6 mb-5 ">
+<div className=" bottom-0 left-0 right-0 flex justify-center items-end space-x-6 p-5  ">
+      {/* <div className="flex justify-center  space-x-6 mb-5 "> */}
         <button className="flex items-center justify-center ">
           <Border
             padding="p-4"
