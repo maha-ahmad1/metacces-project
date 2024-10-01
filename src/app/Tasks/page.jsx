@@ -49,19 +49,11 @@ const tasks = [
     xp: "+100 XP",
     icon: <FaInstagram />,
   },
-  {
-    id: 6,
-    platform: "YouTube",
-    action: "Subscribe",
-    handle: "@metacces",
-    xp: "+100 XP",
-    icon: <FaInstagram />,
-  },
 ];
 
 const TaskPage = () => {
   return (
-    <div className="w-full h-screen  bg-black text-white  p-5">
+    <div className="w-full h-screen  bg-black text-white p-5">
       <div className=" p-4 border-2 border-[#6C6B70]">
         {/* Search Bar */}
         <div className="relative mb-6">

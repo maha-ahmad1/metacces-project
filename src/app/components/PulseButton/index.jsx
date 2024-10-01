@@ -8,7 +8,7 @@ const PulseButton = ({ onStart, onStop, isCompleted }) => {
         <div className="absolute inset-8 bg-purple-700 rounded-full opacity-60 animate-pulse animation-delay-1000" />
       </div>
       <button
-        className="bg-[#080717] p-6 rounded-full"
+        className="bg-[#080717] p-5 rounded-full"
         onMouseDown={onStart}
         onMouseUp={onStop}
         onMouseLeave={onStop}

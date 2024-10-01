@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Border from "../components/Border";
 import Link from "next/link";
+import { Mic  } from 'lucide-react';
+
 export default function ProfilePage() {
   return (
-    <div className="bg-[#080717] flex flex-col items-center justify-between text-white w-full h-screen p-5 ">
-      <div className="w-full mt-4 relative flex ">
+    <div className="bg-[#080717] flex flex-col items-center justify-between text-white w-full h-screen p-5  ">
+      <div className="w-full mt-4 relative  ">
         <Border
           image={
             <div className="flex items-center">
@@ -50,7 +52,7 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      <div className="flex-grow flex items-center justify-center ">
+      <div className="flex items-center justify-center ">
         <Image
           width={100}
           height={100}
@@ -60,13 +62,13 @@ export default function ProfilePage() {
         />
       </div>
 
-      <div className="flex justify-center items-end space-x-6 p-5">
+      <div className="flex justify-center items-end space-x-6 p-5 ">
         <button className="flex items-center justify-center ">
           <Border
             padding="p-4"
             image={
               <Image
-                src="/assets/solid.png"
+                src="/assets/Solid.png"
                 alt="Mic Icon"
                 className="w-8 h-8 "
                 width={100}
