@@ -1,9 +1,9 @@
-// import Border from "../Border";
-import BorderPogress from "../BorderPogress";
+import Border from "../Border";
+// import BorderPogress from "../BorderPogress";
 const ProgressBar = ({ progress }) => {
   return (
     <div>
-      <BorderPogress
+      <Border
         image={
           <div className="">
             <div
@@ -22,6 +22,7 @@ const ProgressBar = ({ progress }) => {
         padding="p-4"
         backgroundColor="#080717"
         className=""
+         shape="rounded-progress"
       />
 
       {/* <style jsx>{`

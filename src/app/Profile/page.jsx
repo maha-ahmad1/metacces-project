@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Border from "../components/Border";
 import Link from "next/link";
-import { Mic  } from 'lucide-react';
+import { Mic } from "lucide-react";
 
 export default function ProfilePage() {
   return (
@@ -45,6 +45,7 @@ export default function ProfilePage() {
               </div>
             </div>
           }
+          shape="rounded-div"
           backgroundColor="#312E52"
         />
         <div className="absolute z-10 bottom-1 left-12 transform -translate-x-1/2 bg-[#B848D8] rounded-full w-6 h-6 flex items-center justify-center">
@@ -61,8 +62,8 @@ export default function ProfilePage() {
           className=""
         />
       </div> */}
-<div className="fixed bottom-0 left-0 right-0 flex justify-center items-end space-x-6 pb-8 pt-4 ">
-      {/* <div className="flex justify-center  space-x-6 mb-5 "> */}
+      <div className="fixed bottom-0 left-0 right-0 flex justify-center items-end space-x-6 pb-8 pt-4 ">
+        {/* <div className="flex justify-center  space-x-6 mb-5 "> */}
         <button className="flex items-center justify-center ">
           <Border
             padding="p-4"
@@ -93,6 +94,7 @@ export default function ProfilePage() {
                 />
               }
               backgroundColor="#312E52"
+              shape="rounded-img"
             />
           </button>
         </Link>
