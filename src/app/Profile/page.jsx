@@ -52,7 +52,7 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center ">
+      {/* <div className="flex items-center justify-center ">
         <Image
           width={100}
           height={100}
@@ -60,7 +60,7 @@ export default function ProfilePage() {
           alt="Robot Character"
           className=""
         />
-      </div>
+      </div> */}
 
       <div className="flex justify-center items-end space-x-6 mb-5 ">
         <button className="flex items-center justify-center ">
