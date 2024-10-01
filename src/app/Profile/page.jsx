@@ -58,11 +58,11 @@ export default function ProfilePage() {
           height={100}
           src="/assets/email.png"
           alt="Robot Character"
-          className="w-[300px] h-auto"
+          className=""
         />
       </div>
 
-      <div className="flex justify-center items-end space-x-6 mb-8 ">
+      <div className="flex justify-center items-end space-x-6 mb-5 ">
         <button className="flex items-center justify-center ">
           <Border
             padding="p-4"
