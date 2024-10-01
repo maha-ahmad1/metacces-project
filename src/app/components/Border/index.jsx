@@ -15,7 +15,7 @@ export default function Border({
   return (
     <div className={`relative ${width} ${height} z-10 ${className}`}>
       <div
-        className={`font-worksans rounded-shape w-full relative text-center  z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${textColor}`}
+        className={`font-worksans rounded-custom w-full relative text-center  z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${textColor}`}
       >
         <div className={`relative z-10  rounded-full ${padding}`}>{image}</div>
         <div
@@ -31,7 +31,7 @@ export default function Border({
         ></div>
       </div>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .rounded-custom {
           border-radius: 24px;
           clip-path: polygon(
@@ -45,7 +45,7 @@ export default function Border({
             0 26%
           );
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

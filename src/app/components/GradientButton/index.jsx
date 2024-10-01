@@ -13,13 +13,13 @@ const GradientButton = ({
         onClick={onClick}
       >
         <span className="relative z-10 font-worksans text-lg">{text}</span>
-        <div className="absolute inset-0 rounded-shape "style={{ background: "linear-gradient(to right, #5F9FE7, #4AE1D2, #E07DFE, #FF1FCA)" }}></div>
-        <div className="absolute inset-0 rounded-shape "style={{ background: "linear-gradient(to right, #5F9FE7, #4AE1D2, #E07DFE, #FF1FCA)" }}></div>
-        <div className={`absolute inset-[2px] rounded-shape ${bgColor}`}></div>
+        <div className="absolute inset-0 rounded-custom "style={{ background: "linear-gradient(to right, #5F9FE7, #4AE1D2, #E07DFE, #FF1FCA)" }}></div>
+        <div className="absolute inset-0 rounded-custom "style={{ background: "linear-gradient(to right, #5F9FE7, #4AE1D2, #E07DFE, #FF1FCA)" }}></div>
+        <div className={`absolute inset-[2px] rounded-custom ${bgColor}`}></div>
 
       </button>
       <style jsx>{`
-        .rounded-shape {
+        .rounded-custom {
           border-radius: 24px;
           clip-path: polygon(
             4% 0,

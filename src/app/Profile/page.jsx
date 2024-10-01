@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Border from "../components/Border";
+import Link from "next/link";
 export default function ProfilePage() {
   return (
     <div className="bg-[#080717] flex flex-col items-center justify-between text-white w-full h-screen p-5 ">
@@ -76,22 +77,23 @@ export default function ProfilePage() {
             className=""
           />
         </button>
-
-        <button className="flex items-center justify-center  ">
-          <Border
-            padding="p-4"
-            image={
-              <Image
-                src="/assets/Mask group.png"
-                alt="Mic Icon"
-                className="w-14 h-14"
-                width={100}
-                height={100}
-              />
-            }
-            backgroundColor="#312E52"
-          />
-        </button>
+        <Link href="/tasks">
+          <button className="flex items-center justify-center  ">
+            <Border
+              padding="p-4"
+              image={
+                <Image
+                  src="/assets/Mask group.png"
+                  alt="Mic Icon"
+                  className="w-14 h-14"
+                  width={100}
+                  height={100}
+                />
+              }
+              backgroundColor="#312E52"
+            />
+          </button>
+        </Link>
         <button className="flex items-center justify-center  ">
           <Border
             image={

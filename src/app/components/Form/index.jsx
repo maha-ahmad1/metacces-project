@@ -4,6 +4,7 @@ import Titel from "../Titel";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { User } from 'lucide-react';
 
 export default function SignupForm() {
   const [selectedOption, setSelectedOption] = useState("Male");
@@ -29,27 +30,29 @@ export default function SignupForm() {
                 id="name"
                 autoComplete="off"
                 placeholder="Username"
-                className={`w-full px-12 py-4 font-worksans  bg-[#080717] border-2 text-[#6C6B70] text-md outline-none rounded-shape relative z-10 ${
+                className={`w-full px-12 py-4 font-worksans  bg-[#080717] border-2 text-[#6C6B70] text-md outline-none rounded-custom relative z-10 ${
                   focused ? "border-transparent" : "  border-[#6C6B70]"
                 }`}
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
               />
-              <i className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white z-10">
-                <Image
+              <i className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-10">
+                {/* <Image
                   width={25}
                   height={30}
                   src="/assets/email.png"
                   alt="email"
                   className="text-white"
-                />
+                /> */}
+                    <User color="white" size={26}/>
+
               </i>
               {focused && (
-                <div className="absolute -inset-[2px] rounded-shape border-gradient"></div>
+                <div className="absolute -inset-[2px] rounded-custom border-gradient"></div>
               )}
 
-              <style jsx>{`
-                .rounded-shape {
+              {/* <style jsx>{`
+                .rounded-custom {
                   border-radius: 25px;
                   clip-path: polygon(
                     4% 0,
@@ -80,7 +83,7 @@ export default function SignupForm() {
                   position: relative;
                   z-index: 10;
                 }
-              `}</style>
+              `}</style> */}
             </div>
 
             <div className="flex justify-between items-center">

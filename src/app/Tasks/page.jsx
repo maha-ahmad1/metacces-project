@@ -79,13 +79,13 @@ const TaskPage = () => {
 
         {/* Task Header */}
         <div
-          className="text-left flex flex-col justify-start  p-4 rounded-shape mb-4 "
+          className="text-left flex flex-col justify-start  p-4 rounded-custom mb-4 "
           style={{
             background:
               "linear-gradient(to right, #5F9FE7, #4AE1D2, #E07DFE, #FF1FCA)",
           }}
         >
-          <p className="text-[12px] font-worksans rounded-shape bg-[#726CAC] w-20 text-center mb-2 p-[4px]">
+          <p className="text-[12px] font-worksans rounded-custom bg-[#726CAC] w-20 text-center mb-2 p-[4px]">
             Available
           </p>
           <h2 className="text-2xl font-keepcalm">12 TASKS</h2>
@@ -96,7 +96,7 @@ const TaskPage = () => {
           {tasks.map((task) => (
             <div
               key={task.id}
-              className="flex justify-between items-center p-4 rounded-shape border-2 border-[#6C6B70]"
+              className="flex justify-between items-center p-4 rounded-custom border-2 border-[#6C6B70]"
             >
               <div className="flex items-center space-x-4">
                 {/* Icon */}
@@ -135,7 +135,7 @@ const TaskPage = () => {
           ))}
         </div>
         <style jsx>{`
-          .rounded-shape {
+          .rounded-custom {
             border-radius: 35px;
             clip-path: polygon(
               4% 0,

@@ -1,17 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Work_Sans } from '@next/font/google';
+import { Work_Sans } from 'next/font/google';
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 
 const keepcalm = localFont({
   src: "./fonts/KeepCalm-Medium.ttf",
@@ -36,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`  ${keepcalm.variable} ${workSans.variable} antialiased`}
       >
-        <div className="min-h-screen  bg-[#080717] text-white">
+        <div className="min-h-screen  bg-[#080717] text-white ">
           {children}
         </div>
       </body>

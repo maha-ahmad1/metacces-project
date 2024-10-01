@@ -2,15 +2,16 @@
   "compilerOptions": {
     "baseUrl": "src",  // You can use absolute imports starting from the 'src' folder
     "paths": {
-      "@/*": ["./src/*"]  // Aliases '@' to the 'src' folder for easier imports
+      "@/*": ["./src/*"] , // Aliases '@' to the 'src' folder for easier imports
+     // "components/*": ["components/*"]
     },
-    "target": "esnext",  // Use modern JavaScript features
-    "moduleResolution": "node",  // Resolve modules like Node.js
-    "jsx": "preserve",  // Keep JSX syntax intact for Next.js
-    "allowJs": true,  // Allow regular JavaScript files
-    "strict": false,  // You can disable strict type checks since you're not using TypeScript
-    "resolveJsonModule": true,  // Allows importing JSON files
-    "esModuleInterop": true  // Improves compatibility with CommonJS modules
+    // "target": "esnext",  // Use modern JavaScript features
+    // "moduleResolution": "node",  // Resolve modules like Node.js
+    // "jsx": "preserve",  // Keep JSX syntax intact for Next.js
+    // "allowJs": true,  // Allow regular JavaScript files
+    // "strict": false,  // You can disable strict type checks since you're not using TypeScript
+    // "resolveJsonModule": true,  // Allows importing JSON files
+    // "esModuleInterop": true  // Improves compatibility with CommonJS modules
   },
   "include": [
     "src/**/*",  // Include all files in the src folder

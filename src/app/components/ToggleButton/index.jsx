@@ -11,7 +11,7 @@ export default function ToggleButton({
         <div key={index} className="relative w-[48%] h-full z-10">
           <button
             onClick={() => onSelect(option)}
-            className={`font-worksans rounded-shape w-full relative p-4 text-center z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${
+            className={`font-worksans rounded-custom w-full relative p-4 text-center z-10 font-semibold text-lg transition-colors duration-500 ease-in-out outline-none ${
               option === selectedOption ? "text-white" : "text-[#6C6B70]"
             }`}
           >
@@ -31,7 +31,7 @@ export default function ToggleButton({
           </button>
         </div>
       ))}
-      <style jsx>{`
+      {/* <style jsx>{`
         .rounded-custom {
           border-radius: 24px;
           clip-path: polygon(
@@ -45,7 +45,7 @@ export default function ToggleButton({
             0 26%
           );
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

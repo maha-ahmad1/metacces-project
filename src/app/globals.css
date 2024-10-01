@@ -31,14 +31,34 @@ body {
   }
 }
 
-@keyframes hue {
-  100% {
-    filter: hue-rotate(360deg);
-  }
+.rounded-custom {
+  border-radius: 25px;
+  clip-path: polygon(
+    4% 0,
+    96% 0,
+    100% 26%,
+    100% 74%,
+    96% 100%,
+    4% 100%,
+    0 74%,
+    0 26%
+  );
 }
 
-@layer utilities {
-  .animate-hue {
-    animation: hue 2s linear infinite;
-  }
+.border-gradient {
+  background: linear-gradient(
+    to right,
+    #5f9fe7,
+    #4ae1d2,
+    #e07dfe,
+    #ff1fca
+  );
+  z-index: 1;
+  padding: 2px;
+  position: absolute;
+}
+
+input {
+  position: relative;
+  z-index: 10;
 }
