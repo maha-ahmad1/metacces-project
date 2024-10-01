@@ -62,13 +62,13 @@ export default function ProfilePage() {
         />
       </div>
 
-      <div className="flex justify-center items-end space-x-6 pb-5 ">
+      <div className="flex justify-center items-end space-x-6 mb-5 ">
         <button className="flex items-center justify-center ">
           <Border
             padding="p-4"
             image={
               <Image
-                src="/assets/Solid.png"
+                src="/assets/Solid-1.webp"
                 alt="Mic Icon"
                 className="w-8 h-8 "
                 width={100}
@@ -85,7 +85,7 @@ export default function ProfilePage() {
               padding="p-4"
               image={
                 <Image
-                  src="/assets/Mask group.png"
+                  src="/assets/Mask group-1.webp"
                   alt="Mic Icon"
                   className="w-14 h-14"
                   width={100}
@@ -100,7 +100,7 @@ export default function ProfilePage() {
           <Border
             image={
               <Image
-                src="/assets/arrow.png"
+                src="/assets/arrow-1.webp"
                 alt="Mic Icon"
                 className="w-8 h-8"
                 width={100}

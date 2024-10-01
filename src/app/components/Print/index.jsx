@@ -10,7 +10,7 @@ export default function Print() {
         priority={true}
         width={30}
         height={40}
-        src="/assets/Layer_1.png"
+        src="/assets/Layer.webp"
         alt="Fingerprint"
         className="w-24 h-24"
         onContextMenu={handleContextMenu}

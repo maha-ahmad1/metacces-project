@@ -61,7 +61,7 @@ const TaskPage = () => {
             <p className="font-keepcalm text-xl ">Tasks</p>
           </div>
           <Image
-            src="/assets/X.png"
+            src="/assets/X-1.webp"
             alt=" close"
             className="absolute w-4 h-4 top-3 right-4 text-white"
             width={100}
